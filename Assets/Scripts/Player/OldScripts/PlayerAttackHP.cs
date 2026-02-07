@@ -8,7 +8,6 @@ public class PlayerAttackHP : MonoBehaviour
     [SerializeField] private Transform attackSpawn;
     [SerializeField] private GameObject torpedoPrefab;
     [SerializeField] public float playerHealth;
-    public bool isDead;
     [SerializeField] playerhealth _healthbar;
     void Update()
     {

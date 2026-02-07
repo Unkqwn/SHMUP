@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Gameloop Scenes/Main Menu.unity
+    path: Assets/Scenes/Gameloop Scenes/MainMenu.unity
     guid: 63a8b3c399212b64384158a7964124cf
   - enabled: 1
     path: Assets/Scenes/Gameloop Scenes/Gameplay.unity
@@ -15,9 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Gameloop Scenes/Credits.unity
     guid: d62f9b96b9880dd448a955bf77bb8b8b
   - enabled: 1
-    path: Assets/Scenes/Gameloop Scenes/WinScreen.unity
+    path: Assets/Scenes/Gameloop Scenes/Win.unity
     guid: 0912ad3d97b4d3143926051f56ec6811
   - enabled: 1
-    path: Assets/Scenes/Gameloop Scenes/EndScreen.unity
+    path: Assets/Scenes/Gameloop Scenes/GameOver.unity
     guid: d063f2cb9eb238f4891d3cb4ae2ccaf7
   m_configObjects: {}
