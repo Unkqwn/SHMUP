@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerHP : MonoBehaviour
+public class PlayerHP : MonoBehaviour, IDamageable
 {
     [SerializeField] private float maxHP = 100f;
     [SerializeField] private PlayerHPBar hpBar;
@@ -37,7 +37,7 @@ public class PlayerHP : MonoBehaviour
         }
     }
 
-    private void TakeDamage(float damage)
+    public void TakeDamage(float damage)
     {
         currentHP -= damage;
         currentHP = Mathf.Clamp(currentHP, 0, maxHP);

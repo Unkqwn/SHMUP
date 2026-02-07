@@ -6,13 +6,8 @@ using UnityEngine.SceneManagement;
 public class BossHealth : MonoBehaviour
 {
     [SerializeField] public float bossHealth;
-    [SerializeField] private Manager game;
     [SerializeField] BossHealthBar _healthbar;
     public bool bossDead = false;
-    private void Awake()
-    {
-        game = gameObject.GetComponent<Manager>();
-    }
 
     private void OnTriggerEnter(Collider other)
     {

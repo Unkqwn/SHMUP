@@ -17,7 +17,6 @@ public class EnemyAttack : MonoBehaviour
     [SerializeField] private bool inkAttack;
     [SerializeField] private int attackAmount;
 
-    private Manager game;
     float torpedoTimer = 0;
     float inkAttackTimer = 0;
     float torpedoInterval;
@@ -25,7 +24,6 @@ public class EnemyAttack : MonoBehaviour
 
     private void Awake()
     {
-        game = FindObjectOfType<Manager>();
     }
 
     // Update is called once per frame

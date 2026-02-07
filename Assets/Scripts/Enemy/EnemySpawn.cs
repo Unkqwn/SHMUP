@@ -5,7 +5,6 @@ using UnityEngine;
 public class EnemySpawn : MonoBehaviour
 {
     private Scrolling move;
-    private Manager manager;
     private float Timer;
     [SerializeField] private GameObject Piranha;
     [SerializeField] private GameObject Kraken;
@@ -14,7 +13,6 @@ public class EnemySpawn : MonoBehaviour
     void Start()
     {
         move = FindObjectOfType<Scrolling>();
-        manager = GetComponent<Manager>();
 
     }
 

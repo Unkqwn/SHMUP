@@ -13,7 +13,6 @@ public class BossAttack : MonoBehaviour
     [SerializeField] private GameObject minigunPrefab;
     [SerializeField] private Transform minigunSpawn;
 
-    private Manager game;
     private BossHealth health;
     private Scrolling scrolling;
     float torpedoTimer = 0;
@@ -24,7 +23,6 @@ public class BossAttack : MonoBehaviour
 
     private void Start()
     {
-        game = FindObjectOfType<Manager>();
         health = FindObjectOfType<BossHealth>();
     }
 
