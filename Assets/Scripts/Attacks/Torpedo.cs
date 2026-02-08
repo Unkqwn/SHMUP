@@ -1,18 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Torpedo : MonoBehaviour
 {
-    public float Damage { get; set; } = 10f;
+    [SerializeField] private float speed = 20f;
 
-    private void OnTriggerEnter(Collider other)
+    private Rigidbody rb;
+
+    private void Awake()
     {
-        IDamageable damageable = other.GetComponent<IDamageable>();
-        if (damageable != null)
-        {
-            damageable.TakeDamage(Damage);
-            Destroy(gameObject);
-        }
+        rb = GetComponent<Rigidbody>();
+    }
+
+    private void FixedUpdate()
+    {
+        rb.velocity = transform.forward * speed;
     }
 }

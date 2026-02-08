@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerHP : MonoBehaviour, IDamageable
 {
@@ -29,14 +28,6 @@ public class PlayerHP : MonoBehaviour, IDamageable
         }
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            TakeDamage(10f);
-        }
-    }
-
     public void TakeDamage(float damage)
     {
         currentHP -= damage;
@@ -51,6 +42,6 @@ public class PlayerHP : MonoBehaviour, IDamageable
         {
             GameManager.Instance.GameOver();
         }
-        
+
     }
 }
