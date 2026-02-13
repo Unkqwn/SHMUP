@@ -4,9 +4,9 @@ public abstract class EnemyMovement : MonoBehaviour
 {
     [Header("Movement")]
     [SerializeField] protected float speed;
-    [SerializeField] private float boundaryPadding = 0.1f;
+    [SerializeField] protected float boundaryPadding = 0.1f;
 
-    private Camera mainCamera;
+    protected Camera mainCamera;
 
     private void Awake()
     {
