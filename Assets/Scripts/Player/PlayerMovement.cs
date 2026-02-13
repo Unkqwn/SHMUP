@@ -31,7 +31,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
-        // Ensure player stays on the same Z plane
         Vector3 pos = transform.position;
         pos.z = 0f;
         transform.position = pos;

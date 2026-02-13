@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class SharkMovement : EnemyMovement
 {
+    [Header("Shark Movement Settings")]
     [SerializeField] private Transform target;
     [SerializeField] private float smoothTime = 0.3f;
     private float velocityY;
