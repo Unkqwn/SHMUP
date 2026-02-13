@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PiranhaMovement : EnemyMovement
+public class KrakenMovement : EnemyMovement
 {
     protected override void Move()
     {

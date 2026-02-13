@@ -237,7 +237,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &896722702
 Transform:
   m_ObjectHideFlags: 0
@@ -987,8 +987,8 @@ GameObject:
   - component: {fileID: 3469287838629766237}
   - component: {fileID: 3469287838629766236}
   - component: {fileID: 3469287838629766233}
-  - component: {fileID: 3469287838629766234}
   - component: {fileID: 3469287838629766235}
+  - component: {fileID: 3469287838629766234}
   m_Layer: 0
   m_Name: Shark
   m_TagString: Enemy
@@ -1010,8 +1010,8 @@ GameObject:
   - component: {fileID: 3469287837043922616}
   - component: {fileID: 3469287837043922615}
   - component: {fileID: 3469287837043922612}
-  - component: {fileID: 3469287837043922613}
   - component: {fileID: 3469287837043922614}
+  - component: {fileID: 3469287837043922613}
   m_Layer: 0
   m_Name: Piranha
   m_TagString: Enemy
@@ -1401,8 +1401,8 @@ GameObject:
   - component: {fileID: 8671196772421905850}
   - component: {fileID: 8671196772421905849}
   - component: {fileID: 8671196772421905846}
-  - component: {fileID: 8671196772421905847}
   - component: {fileID: 8671196772421905848}
+  - component: {fileID: 8671196772421905847}
   m_Layer: 0
   m_Name: Kraken
   m_TagString: Enemy
@@ -1496,7 +1496,7 @@ PrefabInstance:
     - target: {fileID: 6136345973240479641, guid: 4169f5c85aca07942b2ba2749d10e7af,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4169f5c85aca07942b2ba2749d10e7af, type: 3}

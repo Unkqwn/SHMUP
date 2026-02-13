@@ -25,7 +25,9 @@ public class EnemyLookAt : MonoBehaviour
     {
         if (target != null)
         {
-            transform.LookAt(target.position);
+            Vector3 targetPos = new Vector3(target.position.x,transform.position.y, transform.position.z);
+
+            transform.LookAt(targetPos);
         }
     }
 }
