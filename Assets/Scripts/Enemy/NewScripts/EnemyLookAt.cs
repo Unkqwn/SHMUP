@@ -10,12 +10,22 @@ public class EnemyLookAt : MonoBehaviour
     {
         if (target == null)
         {
-            target = GameObject.FindGameObjectWithTag("Player").transform;
+            try
+            {
+                target = GameObject.FindGameObjectWithTag("Player").transform;
+            }
+            catch
+            {
+                Debug.LogError("Player not found. Please assign the target in the inspector or ensure the player has the 'Player' tag.");
+            }
         }
     }
 
     void Update()
     {
-        transform.LookAt(target.position);
+        if (target != null)
+        {
+            transform.LookAt(target.position);
+        }
     }
 }

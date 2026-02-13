@@ -23,7 +23,6 @@ public class EnemySpawning : MonoBehaviour
     private void SpawnEnemy()
     {
         Vector3 randomOffset = new Vector3(0f, Random.Range(-5f, 5f), 0f);
-        Debug.Log("Spawning Enemy");
         Vector3 spawnPosition = transform.position + spawnOffset + randomOffset;
 
         int randomIndex = Random.Range(0, EnemyPrefabs.Count);

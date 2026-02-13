@@ -1,14 +1,13 @@
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour
+public abstract class EnemyMovement : MonoBehaviour
 {
-    void Start()
+    [SerializeField] protected float speed;
+
+    private void Update()
     {
-        
+        Move();
     }
 
-    void Update()
-    {
-        
-    }
+    protected abstract void Move();
 }

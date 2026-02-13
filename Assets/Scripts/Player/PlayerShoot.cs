@@ -38,18 +38,9 @@ public class PlayerShoot : MonoBehaviour
 
         GameObject projectile = Instantiate(torpedoPrefab, attackSpawn.position, attackSpawn.rotation);
 
-        PlayerTorpedo torpedo = projectile.GetComponent<PlayerTorpedo>();
-        if (torpedo == null)
-        {
-            torpedo = projectile.AddComponent<PlayerTorpedo>();
-        }
+        
+        PlayerTorpedo torpedo = projectile.AddComponent<PlayerTorpedo>();
         torpedo.Damage = damage;
-
-        Rigidbody torpedoRb = projectile.GetComponent<Rigidbody>();
-        if (torpedoRb != null)
-        {
-            torpedoRb.AddForce(transform.forward * initialForce, ForceMode.Impulse);
-        }
 
         Destroy(projectile, torpedoLifetime);
     }

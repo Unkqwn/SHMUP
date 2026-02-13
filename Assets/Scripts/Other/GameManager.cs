@@ -5,8 +5,6 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    public Transform playerPos;
-
     public static GameManager Instance
     {
         get
@@ -22,11 +20,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(gameObject);
-    }
-
-    private void FixedUpdate()
-    {
-        playerPos = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     public void GameOver()
