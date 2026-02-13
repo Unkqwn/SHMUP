@@ -16,7 +16,7 @@ public class SharkMovement : EnemyMovement
 
     protected override void Move()
     {
-        float newY = Mathf.SmoothDamp(transform.position.y, target.position.y, ref velocityY, smoothTime);
+        float newY = Mathf.SmoothDamp(transform.position.y, target.position.y, ref velocityY, smoothTime, speed);
 
         transform.position = new Vector3(transform.position.x, newY, transform.position.z);
     }

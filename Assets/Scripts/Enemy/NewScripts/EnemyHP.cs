@@ -4,10 +4,13 @@ public class EnemyHP : MonoBehaviour, IDamageable
 {
     [SerializeField] private float maxHP = 100f;
     private float currentHP;
+    private float lifetime = 5f;
 
     private void Start()
     {
         currentHP = maxHP;
+
+        Destroy(gameObject, lifetime);
     }
 
     public void TakeDamage(float damage)
