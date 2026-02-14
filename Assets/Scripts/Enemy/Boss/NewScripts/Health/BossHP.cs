@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class PlayerHP : MonoBehaviour, IDamageable
+public class BossHP : MonoBehaviour, IDamageable
 {
     [SerializeField] private float maxHP = 100f;
-    [SerializeField] private PlayerHPBar hpBar;
+    [SerializeField] private BossHPBar hpBar;
 
     private float currentHP;
 
@@ -15,11 +15,11 @@ public class PlayerHP : MonoBehaviour, IDamageable
         {
             try
             {
-                hpBar = FindObjectOfType<PlayerHPBar>();
+                hpBar = FindObjectOfType<BossHPBar>();
             }
             catch
             {
-                Debug.LogWarning("PlayerHPBar not found in the scene.");
+                Debug.LogWarning("BossHPBar not found in the scene.");
             }
         }
         if (hpBar != null)
@@ -49,8 +49,7 @@ public class PlayerHP : MonoBehaviour, IDamageable
 
         if (currentHP <= 0)
         {
-            GameManager.Instance.GameOver();
+            GameManager.Instance.Victory();
         }
-
     }
 }

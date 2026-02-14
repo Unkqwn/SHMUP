@@ -3,7 +3,7 @@ using UnityEngine;
 public class EnemyHP : MonoBehaviour, IDamageable
 {
     [SerializeField] private float maxHP = 100f;
-    private float currentHP;
+    protected float currentHP;
     private float lifetime = 5f;
 
     private void Start()
