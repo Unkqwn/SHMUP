@@ -28,15 +28,6 @@ public class BossHP : MonoBehaviour, IDamageable
         }
     }
 
-    private void Update()
-    {
-        // For testing purposes, you can press the space key to take damage
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            TakeDamage(10f);
-        }
-    }
-
     public void TakeDamage(float damage)
     {
         currentHP -= damage;

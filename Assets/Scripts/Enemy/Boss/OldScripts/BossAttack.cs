@@ -12,20 +12,12 @@ public class BossAttack : MonoBehaviour
     [SerializeField] private Transform torpedoSpawn;
     [SerializeField] private GameObject minigunPrefab;
     [SerializeField] private Transform minigunSpawn;
-
-    private BossHealth health;
     private Scrolling scrolling;
     float torpedoTimer = 0;
     float torpedoInterval;
     float minigunTimer = 0;
     float minigunInterval;
     [SerializeField] public bool canShoot;
-
-    private void Start()
-    {
-        health = FindObjectOfType<BossHealth>();
-    }
-
     void Update()
     {
         if (canShoot)
@@ -35,16 +27,6 @@ public class BossAttack : MonoBehaviour
             {
                 TorpedoShoot();
                 torpedoTimer = 0;
-            }
-            if (health.bossHealth <= 5)
-            {
-                minigunTimer += Time.deltaTime;
-
-                if (minigunTimer >= minigunInterval)
-                {
-                    MinigunShoot();
-                    minigunTimer = 0;
-                }
             }
         }
     }

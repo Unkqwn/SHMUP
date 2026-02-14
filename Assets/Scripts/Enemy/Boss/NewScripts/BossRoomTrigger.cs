@@ -11,6 +11,16 @@ public class BossRoomTrigger : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera bossCamera;
     private int highPriority = 20;
 
+    private void Start()
+    {
+        if (hpBar == null)
+        {
+            hpBar = FindObjectOfType<BossHPBar>().gameObject;
+        }
+
+        hpBar.SetActive(false);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
