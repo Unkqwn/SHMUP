@@ -979,26 +979,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1054237697}
     m_Modifications:
-    - target: {fileID: 2082656995309486114, guid: 447f9e64be20bb9458592e2730c2f4c6,
-        type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2082656995309486114, guid: 447f9e64be20bb9458592e2730c2f4c6,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2082656995309486114, guid: 447f9e64be20bb9458592e2730c2f4c6,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2082656995309486114, guid: 447f9e64be20bb9458592e2730c2f4c6,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 23
-      objectReference: {fileID: 0}
     - target: {fileID: 2082656996183902834, guid: 447f9e64be20bb9458592e2730c2f4c6,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1228,11 +1208,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerHPBar
       objectReference: {fileID: 0}
-    - target: {fileID: 5018949071281348725, guid: ff81c2e6ddfa0c44fb225c2c2785a0da,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff81c2e6ddfa0c44fb225c2c2785a0da, type: 3}
 --- !u!1001 &6136345974775436310
@@ -1244,11 +1219,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1552346003, guid: 4169f5c85aca07942b2ba2749d10e7af, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1552346003, guid: 4169f5c85aca07942b2ba2749d10e7af, type: 3}
       propertyPath: spawnOffset.x
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6136345973240479622, guid: 4169f5c85aca07942b2ba2749d10e7af,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6136345973240479622, guid: 4169f5c85aca07942b2ba2749d10e7af,
         type: 3}
@@ -1318,7 +1298,7 @@ PrefabInstance:
     - target: {fileID: 6136345973240479641, guid: 4169f5c85aca07942b2ba2749d10e7af,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6136345974282364365, guid: 4169f5c85aca07942b2ba2749d10e7af,
         type: 3}
