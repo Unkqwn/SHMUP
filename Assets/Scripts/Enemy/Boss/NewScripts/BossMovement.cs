@@ -85,17 +85,14 @@ public class BossMovement : EnemyMovement
         if (pattern < 0.33f)
         {
             currentMovement = MovementType.Piranha;
-            Debug.Log("Boss switched to Piranha movement");
         }
         else if (pattern < 0.66f)
         {
             currentMovement = MovementType.Shark;
-            Debug.Log("Boss switched to Shark movement");
         }
         else
         {
             currentMovement = MovementType.Kraken;
-            Debug.Log("Boss switched to Kraken movement");
         }
     }
 
