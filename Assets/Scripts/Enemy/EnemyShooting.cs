@@ -11,18 +11,16 @@ public abstract class EnemyShooting : MonoBehaviour
     [SerializeField] protected float damage;
     [SerializeField] protected float projectileLifetime;
 
-    protected float shootDelay = 1f;
+    protected float shootDelay;
 
-    private void Update()
+    protected virtual void Update()
     {
+        shootDelay -= Time.deltaTime;
+
         if (shootDelay <= 0)
         {
             Shoot();
             shootDelay = 1f / fireRate;
-        }
-        else
-        {
-            shootDelay -= Time.deltaTime;
         }
     }
 

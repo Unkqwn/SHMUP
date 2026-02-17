@@ -7,7 +7,7 @@ public class EnemyTorpedo : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         IDamageable damageable = other.GetComponent<IDamageable>();
-        if (damageable != null && !other.CompareTag("Enemy"))
+        if (damageable != null && !other.CompareTag("Enemy") && !other.CompareTag("Boss"))
         {
             damageable.TakeDamage(Damage);
             Destroy(gameObject);
