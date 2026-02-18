@@ -2,15 +2,13 @@ using UnityEngine;
 
 public class EnemyHP : MonoBehaviour, IDamageable
 {
+    [SerializeField] private GameObject explosion;
     [SerializeField] private float maxHP = 100f;
-    [SerializeField] private float lifetime = 5f;
     protected float currentHP;
 
     private void Start()
     {
         currentHP = maxHP;
-
-        Destroy(gameObject, lifetime);
     }
 
     public void TakeDamage(float damage)
@@ -20,7 +18,16 @@ public class EnemyHP : MonoBehaviour, IDamageable
 
         if (currentHP <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
+    }
+
+    public void Die()
+    {
+        if (explosion != null)
+        {
+            Instantiate(explosion, transform.position, Quaternion.identity);
+        }
+        Destroy(gameObject);
     }
 }

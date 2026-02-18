@@ -175,8 +175,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9771ae894bd6c3449a4595e5f6f060bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 7052400243907289846, guid: 9c0cd65e92e8ede4bb248e6db01aa7bb,
+    type: 3}
   maxHP: 10
-  lifetime: 10
 --- !u!114 &7439848985984125313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,3 +211,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   boundaryPadding: 0.1
+  collisionDamage: 20

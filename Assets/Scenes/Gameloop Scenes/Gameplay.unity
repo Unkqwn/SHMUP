@@ -9261,21 +9261,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1552346003, guid: 4169f5c85aca07942b2ba2749d10e7af, type: 3}
-      propertyPath: EnemyPrefabs.Array.data[2]
-      value: 
-      objectReference: {fileID: 6619073218124520604, guid: 9d77cb4524197b7489e5f0a0eb4baf8a,
-        type: 3}
-    - target: {fileID: 5954347339348706084, guid: 4169f5c85aca07942b2ba2749d10e7af,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -8.34
-      objectReference: {fileID: 0}
-    - target: {fileID: 5954347339348706084, guid: 4169f5c85aca07942b2ba2749d10e7af,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6136345973240479623, guid: 4169f5c85aca07942b2ba2749d10e7af,
         type: 3}
       propertyPath: m_RootOrder
@@ -34409,7 +34394,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 15, y: 14, z: 20}
+  m_Size: {x: 20, y: 14, z: 20}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1750644544
 PrefabInstance:

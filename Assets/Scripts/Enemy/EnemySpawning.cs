@@ -16,7 +16,7 @@ public class EnemySpawning : MonoBehaviour
         else
         {
             SpawnEnemy();
-            spawnTimer = Random.Range(1f, 5f);
+            spawnTimer = Random.Range(.5f, 3f);
         }
     }
 

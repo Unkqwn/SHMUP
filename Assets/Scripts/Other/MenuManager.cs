@@ -4,24 +4,20 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    [Header("Scenes")]
-    [SerializeField] private SceneAsset GameScene;
-    [SerializeField] private SceneAsset CreditsScene;
-    [SerializeField] private SceneAsset MainMenuScene;
 
     public void StartGame()
     {
-        SceneManager.LoadScene(GameScene.name);
+        SceneManager.LoadScene("Gameplay");
     }
 
     public void ShowCredits()
     {
-        SceneManager.LoadScene(CreditsScene.name);
+        SceneManager.LoadScene("Credits");
     }
 
     public void ReturnToMainMenu()
     {
-        SceneManager.LoadScene(MainMenuScene.name);
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void QuitGame()
