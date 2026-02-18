@@ -9,9 +9,12 @@ public abstract class EnemyMovement : MonoBehaviour
 
     protected Camera mainCamera;
 
+    private EnemyHP enemyDeath;
+
     private void Start()
     {
         mainCamera = Camera.main;
+        enemyDeath = GetComponent<EnemyHP>();
     }
 
     private void Update()
@@ -40,14 +43,13 @@ public abstract class EnemyMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Destroy(collision.gameObject);
+            enemyDeath.Die();
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         PlayerHP playerHP = other.GetComponent<PlayerHP>();
-        EnemyHP enemyDeath = GetComponent<EnemyHP>();
         if (other.CompareTag("Player"))
         {
             playerHP.TakeDamage(collisionDamage);
