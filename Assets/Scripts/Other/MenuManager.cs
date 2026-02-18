@@ -19,7 +19,7 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene(CreditsScene.name);
     }
 
-    public void HideCredits()
+    public void ReturnToMainMenu()
     {
         SceneManager.LoadScene(MainMenuScene.name);
     }
