@@ -8,7 +8,7 @@ public abstract class EnemyMovement : MonoBehaviour
 
     protected Camera mainCamera;
 
-    private void Awake()
+    private void Start()
     {
         mainCamera = Camera.main;
     }

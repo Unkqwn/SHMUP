@@ -6,6 +6,7 @@ public class BossRoomTrigger : MonoBehaviour
     [Header("Boss Settings")]
     [SerializeField] private GameObject bossPrefab;
     [SerializeField] private GameObject hpBar;
+    [SerializeField] private Transform spawnPoint;
 
     [Header("Camera Settings")]
     [SerializeField] private CinemachineVirtualCamera bossCamera;
@@ -38,7 +39,7 @@ public class BossRoomTrigger : MonoBehaviour
     private void SpawnBoss()
     {
         EnableBossHPBar();
-        GameObject boss = Instantiate(bossPrefab, transform.position, Quaternion.identity);
+        GameObject boss = Instantiate(bossPrefab, spawnPoint.position, Quaternion.identity);
     }
 
     private void EnableBossHPBar()
